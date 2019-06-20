@@ -10,6 +10,13 @@ namespace Amiriun;
 class Strang
 {
     /**
+     * @return Strang
+     */
+    public static function make(){
+        return new self();
+    }
+
+    /**
      * @param $length
      * @param string|null $characters
      * @return string
@@ -26,5 +33,12 @@ class Strang
         }
 
         return $randomString;
+    }
+
+    /**
+     * Strang constructor.
+     */
+    private function __construct()
+    {
     }
 }
