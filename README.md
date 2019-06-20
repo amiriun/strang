@@ -14,7 +14,7 @@ Strang is the PHP package include string helpers
 
 Create random string with specific length and characters:
 ```php
-use Amiriun;
+use Amiriun\Strang;
 
 $myRandomString = Strang::make()->random(10,'abcdefg');
 

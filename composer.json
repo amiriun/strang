@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Amiriun\\": "src/"
+            "Amiriun\\Strang\\": "src/"
         }
     },
     "minimum-stability": "dev",
