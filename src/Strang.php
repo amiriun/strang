@@ -9,11 +9,25 @@ namespace Amiriun;
  */
 class Strang
 {
+    public static $instance;
+
+    /**
+     * Strang constructor.
+     */
+    private function __construct()
+    {
+    }
+
     /**
      * @return Strang
      */
-    public static function make(){
-        return new self();
+    public static function make()
+    {
+        if (static::$instance) {
+            return static::$instance;
+        }
+
+        return static::$instance = new self();
     }
 
     /**
@@ -33,12 +47,5 @@ class Strang
         }
 
         return $randomString;
-    }
-
-    /**
-     * Strang constructor.
-     */
-    private function __construct()
-    {
     }
 }
