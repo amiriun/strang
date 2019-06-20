@@ -3,7 +3,7 @@
 Strang is the PHP package include string helpers
 
 ### Requirements:
-- PHP >= 7.1
+- PHP >= 5.6
 
 
 ### INSTALATION:
