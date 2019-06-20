@@ -1,10 +1,21 @@
-# PHP Random String Generator
+# PHP string helpers
 
-With this package you can create random string easily.
+Strang is the PHP package include string helpers
 
 ### Requirements:
 - PHP >= 7.1
 
 
 ### INSTALATION:
-composer require .....
+
+```composer require amiriun/strang```
+
+### HELPERS:
+
+Create random string with specific length and characters:
+```php
+use Amiriun;
+
+$myRandomString = Strang::make()->random(10,'abcdefg');
+
+// return : 
